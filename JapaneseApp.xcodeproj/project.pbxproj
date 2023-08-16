@@ -7,18 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A988B2982A7F07C600070BA8 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A988B2972A7F07C600070BA8 /* ComposableArchitecture */; };
+		A99B06B92A851F19000DBAA1 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99B06B82A851F19000DBAA1 /* CustomTabBar.swift */; };
+		A9A7F62E2A8B03F000EEF5ED /* CustomTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7F62D2A8B03F000EEF5ED /* CustomTabBarContainerView.swift */; };
+		A9A7F6312A8C443F00EEF5ED /* CustomTabBarPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7F6302A8C443F00EEF5ED /* CustomTabBarPreferenceKey.swift */; };
 		A9D06D922A7C60070090B1DB /* JapaneseAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D06D912A7C60070090B1DB /* JapaneseAppApp.swift */; };
 		A9D06D942A7C60070090B1DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D06D932A7C60070090B1DB /* ContentView.swift */; };
 		A9D06D962A7C600A0090B1DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D06D952A7C600A0090B1DB /* Assets.xcassets */; };
 		A9D06D992A7C600A0090B1DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D06D982A7C600A0090B1DB /* Preview Assets.xcassets */; };
+		A9D06DA12A7C64040090B1DB /* TestButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D06DA02A7C64040090B1DB /* TestButton.swift */; };
+		A9D06DA32A7C66280090B1DB /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D06DA22A7C66280090B1DB /* K.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A99B06B82A851F19000DBAA1 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		A9A7F62D2A8B03F000EEF5ED /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
+		A9A7F6302A8C443F00EEF5ED /* CustomTabBarPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarPreferenceKey.swift; sourceTree = "<group>"; };
 		A9D06D8E2A7C60070090B1DB /* JapaneseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapaneseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D06D912A7C60070090B1DB /* JapaneseAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseAppApp.swift; sourceTree = "<group>"; };
 		A9D06D932A7C60070090B1DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A9D06D952A7C600A0090B1DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9D06D982A7C600A0090B1DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A9D06DA02A7C64040090B1DB /* TestButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestButton.swift; sourceTree = "<group>"; };
+		A9D06DA22A7C66280090B1DB /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +37,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A988B2982A7F07C600070BA8 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9A7F62F2A8BB2C700EEF5ED /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A99B06B82A851F19000DBAA1 /* CustomTabBar.swift */,
+				A9A7F62D2A8B03F000EEF5ED /* CustomTabBarContainerView.swift */,
+				A9A7F6302A8C443F00EEF5ED /* CustomTabBarPreferenceKey.swift */,
+			);
+			path = CustomTabBar;
+			sourceTree = "<group>";
+		};
 		A9D06D852A7C60070090B1DB = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +75,8 @@
 			children = (
 				A9D06D912A7C60070090B1DB /* JapaneseAppApp.swift */,
 				A9D06D932A7C60070090B1DB /* ContentView.swift */,
+				A9D06D9F2A7C63E50090B1DB /* Views */,
+				A9D06DA22A7C66280090B1DB /* K.swift */,
 				A9D06D952A7C600A0090B1DB /* Assets.xcassets */,
 				A9D06D972A7C600A0090B1DB /* Preview Content */,
 			);
@@ -65,6 +89,15 @@
 				A9D06D982A7C600A0090B1DB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A9D06D9F2A7C63E50090B1DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9A7F62F2A8BB2C700EEF5ED /* CustomTabBar */,
+				A9D06DA02A7C64040090B1DB /* TestButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +116,9 @@
 			dependencies = (
 			);
 			name = JapaneseApp;
+			packageProductDependencies = (
+				A988B2972A7F07C600070BA8 /* ComposableArchitecture */,
+			);
 			productName = JapaneseApp;
 			productReference = A9D06D8E2A7C60070090B1DB /* JapaneseApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +147,9 @@
 				Base,
 			);
 			mainGroup = A9D06D852A7C60070090B1DB;
+			packageReferences = (
+				A988B2962A7F07C600070BA8 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = A9D06D8F2A7C60070090B1DB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +177,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9D06D942A7C60070090B1DB /* ContentView.swift in Sources */,
+				A9A7F62E2A8B03F000EEF5ED /* CustomTabBarContainerView.swift in Sources */,
+				A99B06B92A851F19000DBAA1 /* CustomTabBar.swift in Sources */,
+				A9D06DA32A7C66280090B1DB /* K.swift in Sources */,
+				A9A7F6312A8C443F00EEF5ED /* CustomTabBarPreferenceKey.swift in Sources */,
 				A9D06D922A7C60070090B1DB /* JapaneseAppApp.swift in Sources */,
+				A9D06DA12A7C64040090B1DB /* TestButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +383,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A988B2962A7F07C600070BA8 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A988B2972A7F07C600070BA8 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A988B2962A7F07C600070BA8 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A9D06D862A7C60070090B1DB /* Project object */;
 }
