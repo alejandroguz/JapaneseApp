@@ -55,7 +55,7 @@ extension CustomTabBarView {
         .resizable()
         .frame(width: 50, height: 50)
       Text(tab.text)
-        .foregroundColor(.white)
+        .foregroundColor(selection == tab ? .white : .gray)
         .fontWeight(.bold)
     }
     .scaleEffect(selection == tab ? 1.0 : 0.8)

@@ -14,19 +14,24 @@ struct ContentView: View {
   var body: some View {
     CustomTabBarContainerView(selection: $selection) {
       Color.green
-      .tabBarItem(tab: TabButton(image: "N5samurai", text: "N5"))
+        .tabBarItem(tab: TabButton(image: "N5samurai", text: "N5"),
+                    selection: $selection)
 
       Color.red
-      .tabBarItem(tab: TabButton(image: "N4samurai", text: "N4"))
+        .tabBarItem(tab: TabButton(image: "N4samurai", text: "N4"),
+                    selection: $selection)
 
       Color.yellow
-      .tabBarItem(tab: TabButton(image: "N3samurai", text: "N3"))
+        .tabBarItem(tab: TabButton(image: "N3samurai", text: "N3"),
+                    selection: $selection)
 
       Color.orange
-      .tabBarItem(tab: TabButton(image: "N2samurai", text: "N2"))
+        .tabBarItem(tab: TabButton(image: "N2samurai", text: "N2"),
+                    selection: $selection)
 
       Color.cyan
-      .tabBarItem(tab: TabButton(image: "N1samurai", text: "N1"))
+        .tabBarItem(tab: TabButton(image: "N1samurai", text: "N1"),
+                    selection: $selection)
     }
   }
 }

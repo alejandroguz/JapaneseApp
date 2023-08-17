@@ -43,14 +43,14 @@ struct CustomTabBarContainerView_Previews: PreviewProvider {
 
   static var previews: some View {
     CustomTabBarContainerView(selection: .constant(exampleTabs.first!)) {
-      Color.orange
-        .tabBarItem(tab: exampleTabs[0])
-      Color.green
-        .tabBarItem(tab: exampleTabs[1])
-      Color.blue
-        .tabBarItem(tab: exampleTabs[3])
-      Color.red
-        .tabBarItem(tab: exampleTabs[2])
+//      Color.orange
+//        .tabBarItem(tab: exampleTabs[0])
+//      Color.green
+//        .tabBarItem(tab: exampleTabs[1])
+//      Color.blue
+//        .tabBarItem(tab: exampleTabs[3])
+//      Color.red
+//        .tabBarItem(tab: exampleTabs[2])
     }
   }
 }
