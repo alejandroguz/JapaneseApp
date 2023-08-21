@@ -58,6 +58,7 @@ extension CustomTabBarView {
         .foregroundColor(selection == tab ? .white : .gray)
         .fontWeight(.bold)
     }
-    .scaleEffect(selection == tab ? 1.0 : 0.8)
+    .scaleEffect(1.0)
+//    .scaleEffect(selection == tab ? 1.0 : 0.8)
   }
 }
