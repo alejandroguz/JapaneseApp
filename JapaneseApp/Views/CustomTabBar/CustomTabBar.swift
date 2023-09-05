@@ -45,7 +45,7 @@ struct CustomTabBarView: View {
                   .foregroundColor(.white)
                   .fontWeight(.bold)
               }
-              .scaleEffect(viewStore.selectedTab == tab ? 1 : 0.8)
+              .scaleEffect(viewStore.selectedTab.text == tab.text ? 1 : 0.8)
               .onTapGesture {
                 viewStore.send(.tabTapped(tab))
                 print(tab)
@@ -69,6 +69,6 @@ struct CustomTabBar_Previews: PreviewProvider {
 
   static var previews: some View {
     CustomTabBarView(store: Store(initialState: CustomTabBarFeature.State(),
-                                  reducer: { CustomTabBarFeature() }))
+                                  reducer: { CustomTabBarFeature()._printChanges() }))
   }
 }
