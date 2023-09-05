@@ -5,32 +5,57 @@
 //  Created by Alejandro Guzman Bolivar on 8/10/23.
 //
 
+import ComposableArchitecture
 import SwiftUI
 
 struct CustomTabBarView: View {
-  var tabItems: [TabButton]
-  @Binding var selection: TabButton
+  let store: StoreOf<CustomTabBarFeature>
 
   var body: some View {
-    ZStack {
-      Rectangle()
-        .frame(maxWidth: .infinity)
-        .frame(height: 100)
-      HStack(spacing: 20) {
-        ForEach(tabItems, id: \.image) { item in
-          tabView(tab: item)
-            .onTapGesture {
-              self.selection = item
+    WithViewStore(self.store, observe: { $0 }) { viewStore in
+      VStack {
+        ZStack {
+          switch viewStore.selectedTab.text {
+          case "N5":
+            Text("N5")
+          case "N4":
+            Text("N4")
+          case "N3":
+            Text("N3")
+          case "N2":
+            Text("N2")
+          case "N1":
+            Text("N1")
+          default:
+            Text("Nothing Yet")
+          }
+        }
+
+        ZStack {
+          Rectangle()
+            .frame(maxWidth: .infinity)
+            .frame(height: 100)
+          HStack(spacing: 20) {
+            ForEach(viewStore.tabs) { tab in
+              VStack(alignment: .center) {
+                Image(tab.image)
+                  .resizable()
+                  .frame(width: 50, height: 50)
+                Text(tab.text)
+                  .foregroundColor(.white)
+                  .fontWeight(.bold)
+              }
+              .scaleEffect(viewStore.selectedTab == tab ? 1 : 0.8)
+              .onTapGesture {
+                viewStore.send(.tabTapped(tab))
+                print(tab)
+              }
             }
+          }
         }
       }
     }
   }
-}
-
-struct TabButton: Hashable {
-  let image: String
-  let text: String
 }
 
 struct CustomTabBar_Previews: PreviewProvider {
@@ -43,22 +68,7 @@ struct CustomTabBar_Previews: PreviewProvider {
   ]
 
   static var previews: some View {
-    CustomTabBarView(tabItems: exampleTabs,
-                     selection: .constant(TabButton(image: "N5samurai", text: "N5")))
-  }
-}
-
-extension CustomTabBarView {
-  private func tabView(tab: TabButton) -> some View {
-    VStack(alignment: .center) {
-      Image(tab.image)
-        .resizable()
-        .frame(width: 50, height: 50)
-      Text(tab.text)
-        .foregroundColor(selection == tab ? .white : .gray)
-        .fontWeight(.bold)
-    }
-    .scaleEffect(1.0)
-//    .scaleEffect(selection == tab ? 1.0 : 0.8)
+    CustomTabBarView(store: Store(initialState: CustomTabBarFeature.State(),
+                                  reducer: { CustomTabBarFeature() }))
   }
 }

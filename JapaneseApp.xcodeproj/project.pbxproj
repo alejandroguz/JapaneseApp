@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		A988B2982A7F07C600070BA8 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A988B2972A7F07C600070BA8 /* ComposableArchitecture */; };
 		A99B06B92A851F19000DBAA1 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99B06B82A851F19000DBAA1 /* CustomTabBar.swift */; };
-		A9A7F62E2A8B03F000EEF5ED /* CustomTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7F62D2A8B03F000EEF5ED /* CustomTabBarContainerView.swift */; };
-		A9A7F6312A8C443F00EEF5ED /* CustomTabBarPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7F6302A8C443F00EEF5ED /* CustomTabBarPreferenceKey.swift */; };
-		A9D06D922A7C60070090B1DB /* JapaneseAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D06D912A7C60070090B1DB /* JapaneseAppApp.swift */; };
+		A9A7F62E2A8B03F000EEF5ED /* CustomTabBar_Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7F62D2A8B03F000EEF5ED /* CustomTabBar_Feature.swift */; };
+		A9A7F6312A8C443F00EEF5ED /* CustomTabBar_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7F6302A8C443F00EEF5ED /* CustomTabBar_Model.swift */; };
+		A9D06D922A7C60070090B1DB /* JapaneseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D06D912A7C60070090B1DB /* JapaneseApp.swift */; };
 		A9D06D942A7C60070090B1DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D06D932A7C60070090B1DB /* ContentView.swift */; };
 		A9D06D962A7C600A0090B1DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D06D952A7C600A0090B1DB /* Assets.xcassets */; };
 		A9D06D992A7C600A0090B1DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D06D982A7C600A0090B1DB /* Preview Assets.xcassets */; };
@@ -21,10 +21,10 @@
 
 /* Begin PBXFileReference section */
 		A99B06B82A851F19000DBAA1 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
-		A9A7F62D2A8B03F000EEF5ED /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
-		A9A7F6302A8C443F00EEF5ED /* CustomTabBarPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarPreferenceKey.swift; sourceTree = "<group>"; };
+		A9A7F62D2A8B03F000EEF5ED /* CustomTabBar_Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar_Feature.swift; sourceTree = "<group>"; };
+		A9A7F6302A8C443F00EEF5ED /* CustomTabBar_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar_Model.swift; sourceTree = "<group>"; };
 		A9D06D8E2A7C60070090B1DB /* JapaneseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapaneseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9D06D912A7C60070090B1DB /* JapaneseAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseAppApp.swift; sourceTree = "<group>"; };
+		A9D06D912A7C60070090B1DB /* JapaneseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseApp.swift; sourceTree = "<group>"; };
 		A9D06D932A7C60070090B1DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A9D06D952A7C600A0090B1DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9D06D982A7C600A0090B1DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -48,8 +48,8 @@
 			isa = PBXGroup;
 			children = (
 				A99B06B82A851F19000DBAA1 /* CustomTabBar.swift */,
-				A9A7F62D2A8B03F000EEF5ED /* CustomTabBarContainerView.swift */,
-				A9A7F6302A8C443F00EEF5ED /* CustomTabBarPreferenceKey.swift */,
+				A9A7F62D2A8B03F000EEF5ED /* CustomTabBar_Feature.swift */,
+				A9A7F6302A8C443F00EEF5ED /* CustomTabBar_Model.swift */,
 			);
 			path = CustomTabBar;
 			sourceTree = "<group>";
@@ -73,7 +73,7 @@
 		A9D06D902A7C60070090B1DB /* JapaneseApp */ = {
 			isa = PBXGroup;
 			children = (
-				A9D06D912A7C60070090B1DB /* JapaneseAppApp.swift */,
+				A9D06D912A7C60070090B1DB /* JapaneseApp.swift */,
 				A9D06D932A7C60070090B1DB /* ContentView.swift */,
 				A9D06D9F2A7C63E50090B1DB /* Views */,
 				A9D06DA22A7C66280090B1DB /* K.swift */,
@@ -177,11 +177,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9D06D942A7C60070090B1DB /* ContentView.swift in Sources */,
-				A9A7F62E2A8B03F000EEF5ED /* CustomTabBarContainerView.swift in Sources */,
+				A9A7F62E2A8B03F000EEF5ED /* CustomTabBar_Feature.swift in Sources */,
 				A99B06B92A851F19000DBAA1 /* CustomTabBar.swift in Sources */,
 				A9D06DA32A7C66280090B1DB /* K.swift in Sources */,
-				A9A7F6312A8C443F00EEF5ED /* CustomTabBarPreferenceKey.swift in Sources */,
-				A9D06D922A7C60070090B1DB /* JapaneseAppApp.swift in Sources */,
+				A9A7F6312A8C443F00EEF5ED /* CustomTabBar_Model.swift in Sources */,
+				A9D06D922A7C60070090B1DB /* JapaneseApp.swift in Sources */,
 				A9D06DA12A7C64040090B1DB /* TestButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

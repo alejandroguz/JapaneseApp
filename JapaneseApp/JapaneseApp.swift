@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct JapaneseAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          CustomTabBarView(store: Store(initialState: CustomTabBarFeature.State(),
+                                        reducer: { CustomTabBarFeature() }))
         }
     }
 }
