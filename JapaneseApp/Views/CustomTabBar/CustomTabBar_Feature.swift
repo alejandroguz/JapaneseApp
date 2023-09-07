@@ -18,17 +18,26 @@ struct CustomTabBarFeature: Reducer {
       TabButton(image: "N2samurai", text: "N2"),
       TabButton(image: "N1samurai", text: "N1")
     ]
+    var n5Tab = N5TabButtonFeature.State()
   }
 
   enum Action {
     case tabTapped(TabButton)
+    case n5Tab(N5TabButtonFeature.Action)
   }
 
   var body: some ReducerOf<Self> {
+    Scope(state: \.n5Tab, action: /Action.n5Tab) {
+      N5TabButtonFeature()
+    }
+
     Reduce<State, Action> { state, action in
       switch action {
       case .tabTapped(let tab):
         state.selectedTab = tab
+        return .none
+
+      case .n5Tab:
         return .none
       }
     }
