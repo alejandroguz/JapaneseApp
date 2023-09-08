@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A95F4BF22AA8DF2800C83353 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95F4BF12AA8DF2800C83353 /* Root.swift */; };
 		A988B2982A7F07C600070BA8 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A988B2972A7F07C600070BA8 /* ComposableArchitecture */; };
 		A99B06B92A851F19000DBAA1 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99B06B82A851F19000DBAA1 /* CustomTabBar.swift */; };
 		A9A7F62E2A8B03F000EEF5ED /* CustomTabBar_Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7F62D2A8B03F000EEF5ED /* CustomTabBar_Feature.swift */; };
 		A9A7F6312A8C443F00EEF5ED /* CustomTabBar_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A7F6302A8C443F00EEF5ED /* CustomTabBar_Model.swift */; };
+		A9A891602AABD55A0013C9DB /* N5KanjiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A8915F2AABD55A0013C9DB /* N5KanjiTest.swift */; };
+		A9A891622AABD56C0013C9DB /* N5KanjiTestFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A891612AABD56C0013C9DB /* N5KanjiTestFeature.swift */; };
+		A9A891642AABD82C0013C9DB /* N5GrammarTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A891632AABD82C0013C9DB /* N5GrammarTest.swift */; };
+		A9A891662AABD8390013C9DB /* N5GrammarTestFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A891652AABD8390013C9DB /* N5GrammarTestFeature.swift */; };
+		A9A891682AABDA1E0013C9DB /* N5ReadingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A891672AABDA1E0013C9DB /* N5ReadingTest.swift */; };
+		A9A8916A2AABDA4A0013C9DB /* N5ReadingTestFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A891692AABDA4A0013C9DB /* N5ReadingTestFeature.swift */; };
+		A9A891702AABDC0A0013C9DB /* N5VocabularyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A8916F2AABDC0A0013C9DB /* N5VocabularyTest.swift */; };
+		A9A891722AABDC250013C9DB /* N5VocabularyTestFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A891712AABDC250013C9DB /* N5VocabularyTestFeature.swift */; };
 		A9D06D922A7C60070090B1DB /* JapaneseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D06D912A7C60070090B1DB /* JapaneseApp.swift */; };
 		A9D06D962A7C600A0090B1DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D06D952A7C600A0090B1DB /* Assets.xcassets */; };
 		A9D06D992A7C600A0090B1DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D06D982A7C600A0090B1DB /* Preview Assets.xcassets */; };
@@ -19,15 +26,20 @@
 		A9D06DA32A7C66280090B1DB /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D06DA22A7C66280090B1DB /* K.swift */; };
 		A9D9F5772AA7FA8A00C2953E /* N5TabButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D9F5762AA7FA8A00C2953E /* N5TabButtonView.swift */; };
 		A9D9F5792AA7FAB500C2953E /* N5TabButton_Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D9F5782AA7FAB500C2953E /* N5TabButton_Feature.swift */; };
-		A9D9F57C2AA8027800C2953E /* TestSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D9F57B2AA8027800C2953E /* TestSelectionView.swift */; };
-		A9D9F57E2AA8028B00C2953E /* TestSelection_Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D9F57D2AA8028B00C2953E /* TestSelection_Feature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A95F4BF12AA8DF2800C83353 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
 		A99B06B82A851F19000DBAA1 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		A9A7F62D2A8B03F000EEF5ED /* CustomTabBar_Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar_Feature.swift; sourceTree = "<group>"; };
 		A9A7F6302A8C443F00EEF5ED /* CustomTabBar_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar_Model.swift; sourceTree = "<group>"; };
+		A9A8915F2AABD55A0013C9DB /* N5KanjiTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = N5KanjiTest.swift; sourceTree = "<group>"; };
+		A9A891612AABD56C0013C9DB /* N5KanjiTestFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = N5KanjiTestFeature.swift; sourceTree = "<group>"; };
+		A9A891632AABD82C0013C9DB /* N5GrammarTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = N5GrammarTest.swift; sourceTree = "<group>"; };
+		A9A891652AABD8390013C9DB /* N5GrammarTestFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = N5GrammarTestFeature.swift; sourceTree = "<group>"; };
+		A9A891672AABDA1E0013C9DB /* N5ReadingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = N5ReadingTest.swift; sourceTree = "<group>"; };
+		A9A891692AABDA4A0013C9DB /* N5ReadingTestFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = N5ReadingTestFeature.swift; sourceTree = "<group>"; };
+		A9A8916F2AABDC0A0013C9DB /* N5VocabularyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = N5VocabularyTest.swift; sourceTree = "<group>"; };
+		A9A891712AABDC250013C9DB /* N5VocabularyTestFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = N5VocabularyTestFeature.swift; sourceTree = "<group>"; };
 		A9D06D8E2A7C60070090B1DB /* JapaneseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapaneseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D06D912A7C60070090B1DB /* JapaneseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseApp.swift; sourceTree = "<group>"; };
 		A9D06D952A7C600A0090B1DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,8 +48,6 @@
 		A9D06DA22A7C66280090B1DB /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		A9D9F5762AA7FA8A00C2953E /* N5TabButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = N5TabButtonView.swift; sourceTree = "<group>"; };
 		A9D9F5782AA7FAB500C2953E /* N5TabButton_Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = N5TabButton_Feature.swift; sourceTree = "<group>"; };
-		A9D9F57B2AA8027800C2953E /* TestSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSelectionView.swift; sourceTree = "<group>"; };
-		A9D9F57D2AA8028B00C2953E /* TestSelection_Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSelection_Feature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,62 @@
 			path = CustomTabBar;
 			sourceTree = "<group>";
 		};
+		A9A8915D2AABD4EE0013C9DB /* N5TabButton */ = {
+			isa = PBXGroup;
+			children = (
+				A9D9F5762AA7FA8A00C2953E /* N5TabButtonView.swift */,
+				A9D9F5782AA7FAB500C2953E /* N5TabButton_Feature.swift */,
+			);
+			path = N5TabButton;
+			sourceTree = "<group>";
+		};
+		A9A8915E2AABD50C0013C9DB /* N5Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A9A8916E2AABDBFA0013C9DB /* Vocabulary */,
+				A9A8916D2AABDAA50013C9DB /* Kanji */,
+				A9A8916C2AABDA9D0013C9DB /* Grammar */,
+				A9A8916B2AABDA800013C9DB /* Reading */,
+			);
+			path = N5Tests;
+			sourceTree = "<group>";
+		};
+		A9A8916B2AABDA800013C9DB /* Reading */ = {
+			isa = PBXGroup;
+			children = (
+				A9A891672AABDA1E0013C9DB /* N5ReadingTest.swift */,
+				A9A891692AABDA4A0013C9DB /* N5ReadingTestFeature.swift */,
+			);
+			path = Reading;
+			sourceTree = "<group>";
+		};
+		A9A8916C2AABDA9D0013C9DB /* Grammar */ = {
+			isa = PBXGroup;
+			children = (
+				A9A891632AABD82C0013C9DB /* N5GrammarTest.swift */,
+				A9A891652AABD8390013C9DB /* N5GrammarTestFeature.swift */,
+			);
+			path = Grammar;
+			sourceTree = "<group>";
+		};
+		A9A8916D2AABDAA50013C9DB /* Kanji */ = {
+			isa = PBXGroup;
+			children = (
+				A9A8915F2AABD55A0013C9DB /* N5KanjiTest.swift */,
+				A9A891612AABD56C0013C9DB /* N5KanjiTestFeature.swift */,
+			);
+			path = Kanji;
+			sourceTree = "<group>";
+		};
+		A9A8916E2AABDBFA0013C9DB /* Vocabulary */ = {
+			isa = PBXGroup;
+			children = (
+				A9A8916F2AABDC0A0013C9DB /* N5VocabularyTest.swift */,
+				A9A891712AABDC250013C9DB /* N5VocabularyTestFeature.swift */,
+			);
+			path = Vocabulary;
+			sourceTree = "<group>";
+		};
 		A9D06D852A7C60070090B1DB = {
 			isa = PBXGroup;
 			children = (
@@ -82,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				A9D06D912A7C60070090B1DB /* JapaneseApp.swift */,
-				A95F4BF12AA8DF2800C83353 /* Root.swift */,
 				A9D06D9F2A7C63E50090B1DB /* Views */,
 				A9D06DA22A7C66280090B1DB /* K.swift */,
 				A9D06D952A7C600A0090B1DB /* Assets.xcassets */,
@@ -113,8 +178,7 @@
 		A9D9F5752AA7FA6D00C2953E /* TabButtons */ = {
 			isa = PBXGroup;
 			children = (
-				A9D9F5762AA7FA8A00C2953E /* N5TabButtonView.swift */,
-				A9D9F5782AA7FAB500C2953E /* N5TabButton_Feature.swift */,
+				A9A8915D2AABD4EE0013C9DB /* N5TabButton */,
 			);
 			path = TabButtons;
 			sourceTree = "<group>";
@@ -122,8 +186,7 @@
 		A9D9F57A2AA8024700C2953E /* TestSelection */ = {
 			isa = PBXGroup;
 			children = (
-				A9D9F57B2AA8027800C2953E /* TestSelectionView.swift */,
-				A9D9F57D2AA8028B00C2953E /* TestSelection_Feature.swift */,
+				A9A8915E2AABD50C0013C9DB /* N5Tests */,
 			);
 			path = TestSelection;
 			sourceTree = "<group>";
@@ -204,17 +267,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A891702AABDC0A0013C9DB /* N5VocabularyTest.swift in Sources */,
 				A9A7F62E2A8B03F000EEF5ED /* CustomTabBar_Feature.swift in Sources */,
 				A99B06B92A851F19000DBAA1 /* CustomTabBar.swift in Sources */,
-				A95F4BF22AA8DF2800C83353 /* Root.swift in Sources */,
+				A9A891642AABD82C0013C9DB /* N5GrammarTest.swift in Sources */,
 				A9D06DA32A7C66280090B1DB /* K.swift in Sources */,
+				A9A891602AABD55A0013C9DB /* N5KanjiTest.swift in Sources */,
 				A9A7F6312A8C443F00EEF5ED /* CustomTabBar_Model.swift in Sources */,
-				A9D9F57C2AA8027800C2953E /* TestSelectionView.swift in Sources */,
+				A9A891662AABD8390013C9DB /* N5GrammarTestFeature.swift in Sources */,
 				A9D9F5772AA7FA8A00C2953E /* N5TabButtonView.swift in Sources */,
+				A9A891622AABD56C0013C9DB /* N5KanjiTestFeature.swift in Sources */,
+				A9A891682AABDA1E0013C9DB /* N5ReadingTest.swift in Sources */,
 				A9D9F5792AA7FAB500C2953E /* N5TabButton_Feature.swift in Sources */,
-				A9D9F57E2AA8028B00C2953E /* TestSelection_Feature.swift in Sources */,
+				A9A891722AABDC250013C9DB /* N5VocabularyTestFeature.swift in Sources */,
 				A9D06D922A7C60070090B1DB /* JapaneseApp.swift in Sources */,
 				A9D06DA12A7C64040090B1DB /* TestButton.swift in Sources */,
+				A9A8916A2AABDA4A0013C9DB /* N5ReadingTestFeature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
